@@ -3,4 +3,6 @@ server:
 
 spring:
   mvc:
-    throw-exception-if-no-handler-found: true #³öÏÖ´íÎóÊ±, Ö±½ÓÅ×³öÒì³£
+    throw-exception-if-no-handler-found: true #å‡ºç°é”™è¯¯æ—¶, ç›´æ¥æŠ›å‡ºå¼‚å¸¸
+grpc:
+  etcdendpoints: "http://192.168.230.129:2379"

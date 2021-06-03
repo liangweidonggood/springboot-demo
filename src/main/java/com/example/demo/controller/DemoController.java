@@ -12,6 +12,7 @@ public class DemoController {
 
     @GetMapping("/logs/{type}/{info}")
     public String logs(@PathVariable("type") Integer type, @PathVariable("info") String info){
+
         switch (type){
             case 1:
                 log.info("这是一个info级别的:{}",info);
