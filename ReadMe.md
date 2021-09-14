@@ -58,3 +58,20 @@ maven->Plugins->protobuf->protobuf:compile
 5.调用远程方法并获取结果
 6.提供api接口供前端调用
 ```
+# 使用rpc调用go-zero-demo项目中shorturl服务
+## 1.使用公共proto文件生成代码
+```
+把shorturl服务中的transform.proto文件copy至proto文件夹
+头部添加
+头部添加
+option java_package = "com.example.demo.rpc.transform";
+option java_outer_classname= "Transform";
+生成java代码
+maven clean compile
+target/generated-sources/protobuf/grpc-java/com/example/demo/rpc/transform/transformerGrpc.java
+target/generated-sources/protobuf/java/com/example/demo/rpc/transform/Transform.java
+把文件复制到com.example.demo.rpc.transform下
+```
+## 2.编写service
+
+## 3.编写controller

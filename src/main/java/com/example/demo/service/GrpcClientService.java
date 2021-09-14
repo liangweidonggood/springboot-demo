@@ -23,6 +23,7 @@ public class GrpcClientService {
         }
 
         try {
+
             final Historydata.redisFindHistoryRes res = stubWrapper.getSimpleBlockingStub().redisFindHistory(Historydata.snReq.newBuilder().setSn(name).build());
             if("".equals(res.toString())){
                 return "no data";
