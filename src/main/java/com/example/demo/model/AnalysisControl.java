@@ -11,6 +11,10 @@ public class AnalysisControl implements Serializable {
 
     private static final long serialVersionUID = 6391225548848481827L;
 
+    private Integer eventId;
+
+    private Integer id;
+
     private String controlType;
     private String controlContent;
 

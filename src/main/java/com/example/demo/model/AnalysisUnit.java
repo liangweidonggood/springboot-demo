@@ -12,6 +12,10 @@ public class AnalysisUnit implements Serializable {
 
     private static final long serialVersionUID = 6391225548848481827L;
 
+    private Integer id;
+
+    private Integer objId;
+
     private String unitName;
 
     private List<AnalysisEvent> eventList;

@@ -15,6 +15,8 @@ public class AnalysisObj implements Serializable {
     private String objName;
     private String objNum;
 
+    private Integer id;
+
     private List<AnalysisUnit> unitList;
 
 }
